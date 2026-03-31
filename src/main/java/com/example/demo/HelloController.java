@@ -1,15 +1,13 @@
 package com.example.demo;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-public class HelloController {
+@RestController
+public class DemoController {
 
-    @GetMapping("/hello")
-    @ResponseBody
-    public String hello() {
-        return "<h1>Hello, Welcome to My Spring Boot Web Page!</h1>";
+    @GetMapping("/")
+    public String home() {
+        return "Hello dhivya cutie";
     }
 }
