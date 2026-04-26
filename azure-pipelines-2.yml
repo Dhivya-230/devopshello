@@ -6,9 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
-
+pool: demoo
 steps:
 - task: Maven@3
   inputs:
