@@ -10,9 +10,9 @@ public class HelloController {
         return "hii sharol";
     }
 
-    @PostMapping("/webhook")
-    public String handleWebhook(@RequestBody String payload) {
-        System.out.println("Received from GitHub: " + payload);
-        return "Webhook received";
-    }
+    @PostMapping("/github-webhook")
+public String handleWebhook(@RequestBody String payload) {
+    System.out.println(payload);
+    return "OK";
+}
 }
